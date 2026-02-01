@@ -146,7 +146,7 @@ metadata:
 spec:
 
 # https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.35/#api-groups
-
+```
 apiVersion: v1
 kind: Pod
 metadata:
@@ -157,7 +157,7 @@ spec:
     image: ubuntu:trusty
     command: ["echo"]
     args: ["Hello World"]
-
+```
 K8s API Groups: <group>/<version>
         core => <version>
         apps => apps/v1, batch/v1
@@ -174,7 +174,7 @@ metadata - Data that helps uniquely identify the object, including a name string
 
 spec - What state you desire for the object
 
-
+```
 apiVersion: v1
 kind: Pod
 metadata:
@@ -188,7 +188,7 @@ spec:
      ports:
       - containerPort: 80
 
-
+```
 https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
 
 apiVersion: apps/v1
@@ -208,7 +208,7 @@ apiVersion: v1
 kind: Service
 
 samplepod.yaml
-
+```
 apiVersion: v1
 kind: Pod
 metadata:
@@ -219,4 +219,4 @@ spec:
      image: httpd
      ports:
       - containerPort: 80
-  	
+```  	
